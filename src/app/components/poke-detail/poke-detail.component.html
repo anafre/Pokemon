@@ -1,0 +1,22 @@
+<mat-card class="card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{pokemon.name}}</mat-card-title>
+      <mat-card-subtitle>Nº{{pokemon.id}}</mat-card-subtitle>
+    </mat-card-header>
+
+    <img mat-card-image src="{{pokemonImg}}" alt="pokemon">
+    <mat-card-content>
+        <mat-chip-list aria-label="Fish selection">
+            <mat-chip color="accent" selected>Type: {{pokemonType}}</mat-chip>
+            <mat-chip color="accent" selected>Height: {{pokemon.height}}</mat-chip>
+            <mat-chip color="accent" selected>Weight: {{pokemon.weight}}</mat-chip>
+          </mat-chip-list>
+    </mat-card-content>
+
+    <div class="example-button-row">
+      <button (click)="toggleFavorite()" mat-fab [ngClass]="isFavorite ? '.fav_selected' : '.fav_unselected'" aria-label="Example icon-button with a heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+    </div>
+  </mat-card>

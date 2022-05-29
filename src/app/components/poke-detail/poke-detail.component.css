@@ -1,0 +1,37 @@
+.card{
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #bd3736;
+}
+
+.header-image {
+    background-size: cover;
+}
+
+.mat-card-header{
+    background-color: #fcfcfc;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+.mat-card-title{
+    text-transform: uppercase;
+    color: black;
+}
+
+.mat-card-subtitle{
+    color: black;
+}
+
+.mat-chip{
+    background-color: black;
+}
+
+.fav-unselected {
+    background-color: gray;
+}
+
+.fav-selected {
+    background-color: pink;
+}
